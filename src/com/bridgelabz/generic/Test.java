@@ -10,8 +10,12 @@ public class Test {
 
         String xStr = "zmelon", yStr = "apple", zStr = "grape";
         Integer xInt = 600, yInt = 50, zInt = 800;
+        Float xfloat = 100.6f, yfloat = 50.6f, zfloat = 70.9f;
 
         MaximumTest.testMaximum(xStr,yStr,zStr);
-        MaximumTest.testMaximum(xInt,yInt,zInt);
+        new MaximumTest(xfloat, yfloat, zfloat).maximum();
+        new MaximumTest(xInt, yInt, zInt).maximum();
+        new MaximumTest(xStr, yStr, zStr).maximum();
+
     }
 }

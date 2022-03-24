@@ -23,6 +23,18 @@ public class MaximumTest<T extends Comparable<T>> {
         printMax(x, y, z, max);
         return max;
     }
+    public static Integer testMaximum(Integer x, Integer y, Integer z) {
+        Integer max = x;
+        if (y.compareTo(max) > 0) {
+            max = y;
+        }
+        if (z.compareTo(max) > 0) {
+            max = z;
+        }
+        printMax(x, y, z, max);
+        return max;
+    }
+
 
     public static <T> void printMax(T x, T y, T z, T max) {
         System.out.printf("Max of %s, %s and %s is %s\n", x, y, z, max);
